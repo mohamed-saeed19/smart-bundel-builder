@@ -1,0 +1,403 @@
+{
+  "parts": [
+    {
+      "id": "cpu-amd-9600x",
+      "name": "AMD Ryzen 5 9600X",
+      "price": 214,
+      "category": "CPU",
+      "socket": "AM5",
+      "incompatibleWith": [
+        "mobo-intel-b760",
+        "mobo-intel-z790",
+        "ram-ddr4-16gb",
+        "ram-ddr4-32gb",
+        "cooler-stock-intel"
+      ],
+      "image": "/images/cpu-amd-9600x.jpg",
+      "description": "6-core, 12-thread Zen 5 processor. AM5 socket, DDR5 only."
+    },
+    {
+      "id": "cpu-intel-14400f",
+      "name": "Intel Core i5-14400F",
+      "price": 189,
+      "category": "CPU",
+      "socket": "LGA1700",
+      "incompatibleWith": [
+        "mobo-amd-b650",
+        "mobo-amd-x670",
+        "ram-ddr5-16gb",
+        "ram-ddr5-32gb"
+      ],
+      "image": "/images/cpu-intel-14400f.jpg",
+      "description": "10-core (6P+4E), 16-thread Raptor Lake Refresh. LGA1700, DDR4."
+    },
+    {
+      "id": "cpu-amd-7600x3d",
+      "name": "AMD Ryzen 7 7600X3D",
+      "price": 299,
+      "category": "CPU",
+      "socket": "AM5",
+      "incompatibleWith": [
+        "mobo-intel-b760",
+        "mobo-intel-z790",
+        "ram-ddr4-16gb",
+        "ram-ddr4-32gb",
+        "cooler-stock-intel"
+      ],
+      "image": "/images/cpu-amd-7600x3d.jpg",
+      "description": "6-core, 12-thread with 3D V-Cache. AM5 socket, DDR5 only."
+    },
+    {
+      "id": "cpu-intel-14600kf",
+      "name": "Intel Core i5-14600KF",
+      "price": 259,
+      "category": "CPU",
+      "socket": "LGA1700",
+      "incompatibleWith": [
+        "mobo-amd-b650",
+        "mobo-amd-x670",
+        "ram-ddr5-16gb",
+        "ram-ddr5-32gb"
+      ],
+      "image": "/images/cpu-intel-14600kf.jpg",
+      "description": "14-core (6P+8E), 20-thread unlocked. LGA1700, DDR4."
+    },
+    {
+      "id": "mobo-amd-b650",
+      "name": "MSI MAG B650 Tomahawk WiFi",
+      "price": 185,
+      "category": "Motherboard",
+      "socket": "AM5",
+      "incompatibleWith": [
+        "cpu-intel-14400f",
+        "cpu-intel-14600kf",
+        "ram-ddr4-16gb",
+        "ram-ddr4-32gb"
+      ],
+      "image": "/images/mobo-amd-b650.jpg",
+      "description": "AM5 B650 chipset, DDR5, PCIe 4.0, WiFi 6E."
+    },
+    {
+      "id": "mobo-intel-b760",
+      "name": "ASUS Prime B760M-A WiFi D4",
+      "price": 145,
+      "category": "Motherboard",
+      "socket": "LGA1700",
+      "incompatibleWith": [
+        "cpu-amd-9600x",
+        "cpu-amd-7600x3d",
+        "ram-ddr5-16gb",
+        "ram-ddr5-32gb"
+      ],
+      "image": "/images/mobo-intel-b760.jpg",
+      "description": "LGA1700 B760 chipset, DDR4, micro-ATX, WiFi."
+    },
+    {
+      "id": "mobo-amd-x670",
+      "name": "ASUS ROG Strix X670E-E Gaming WiFi",
+      "price": 349,
+      "category": "Motherboard",
+      "socket": "AM5",
+      "incompatibleWith": [
+        "cpu-intel-14400f",
+        "cpu-intel-14600kf",
+        "ram-ddr4-16gb",
+        "ram-ddr4-32gb",
+        "case-lianli-v100",
+        "case-coolermaster-masterbox"
+      ],
+      "image": "/images/mobo-amd-x670.jpg",
+      "description": "AM5 X670E chipset, DDR5, PCIe 5.0, premium VRMs."
+    },
+    {
+      "id": "mobo-intel-z790",
+      "name": "MSI MAG Z790 Tomahawk WiFi",
+      "price": 230,
+      "category": "Motherboard",
+      "socket": "LGA1700",
+      "incompatibleWith": [
+        "cpu-amd-9600x",
+        "cpu-amd-7600x3d",
+        "ram-ddr5-16gb",
+        "ram-ddr5-32gb",
+        "case-lianli-v100"
+      ],
+      "image": "/images/mobo-intel-z790.jpg",
+      "description": "LGA1700 Z790 chipset, DDR4, PCIe 5.0 x16, WiFi 6E."
+    },
+    {
+      "id": "ram-ddr5-16gb",
+      "name": "Corsair Vengeance RGB 16GB DDR5-6000",
+      "price": 220,
+      "category": "RAM",
+      "type": "DDR5",
+      "incompatibleWith": [
+        "cpu-intel-14400f",
+        "cpu-intel-14600kf",
+        "mobo-intel-b760",
+        "mobo-intel-z790"
+      ],
+      "image": "/images/ram-ddr5-16gb.jpg",
+      "description": "16GB (1x16GB) DDR5-6000 CL36, RGB, AMD EXPO & Intel XMP."
+    },
+    {
+      "id": "ram-ddr4-16gb",
+      "name": "Crucial 16GB DDR4-3200",
+      "price": 85,
+      "category": "RAM",
+      "type": "DDR4",
+      "incompatibleWith": [
+        "cpu-amd-9600x",
+        "cpu-amd-7600x3d",
+        "mobo-amd-b650",
+        "mobo-amd-x670"
+      ],
+      "image": "/images/ram-ddr4-16gb.jpg",
+      "description": "16GB (2x8GB) DDR4-3200, budget-friendly performance."
+    },
+    {
+      "id": "ram-ddr5-32gb",
+      "name": "Patriot Viper Elite 5 32GB DDR5-6000",
+      "price": 380,
+      "category": "RAM",
+      "type": "DDR5",
+      "incompatibleWith": [
+        "cpu-intel-14400f",
+        "cpu-intel-14600kf",
+        "mobo-intel-b760",
+        "mobo-intel-z790"
+      ],
+      "image": "/images/ram-ddr5-32gb.jpg",
+      "description": "32GB (2x16GB) DDR5-6000, high-capacity kit."
+    },
+    {
+      "id": "ram-ddr4-32gb",
+      "name": "TeamGroup T-Force Vulcan 32GB DDR4-3600",
+      "price": 140,
+      "category": "RAM",
+      "type": "DDR4",
+      "incompatibleWith": [
+        "cpu-amd-9600x",
+        "cpu-amd-7600x3d",
+        "mobo-amd-b650",
+        "mobo-amd-x670"
+      ],
+      "image": "/images/ram-ddr4-32gb.jpg",
+      "description": "32GB (2x16GB) DDR4-3600, high-capacity DDR4."
+    },
+    {
+      "id": "gpu-rtx-5060",
+      "name": "NVIDIA GeForce RTX 5060 8GB",
+      "price": 299,
+      "category": "GPU",
+      "incompatibleWith": [],
+      "image": "/images/gpu-rtx-5060.jpg",
+      "description": "8GB GDDR6, DLSS 4, 1080p/1440p gaming."
+    },
+    {
+      "id": "gpu-rx-7600",
+      "name": "AMD Radeon RX 7600",
+      "price": 269,
+      "category": "GPU",
+      "incompatibleWith": [],
+      "image": "/images/gpu-rx-7600.jpg",
+      "description": "8GB GDDR6, RDNA 3, solid 1080p gaming."
+    },
+    {
+      "id": "gpu-rtx-5060ti",
+      "name": "NVIDIA GeForce RTX 5060 Ti 16GB",
+      "price": 429,
+      "category": "GPU",
+      "incompatibleWith": [
+        "psu-corsair-cv550"
+      ],
+      "image": "/images/gpu-rtx-5060ti.jpg",
+      "description": "16GB GDDR6, DLSS 4, 1440p gaming with ray tracing."
+    },
+    {
+      "id": "gpu-rx-9060xt",
+      "name": "AMD Radeon RX 9060 XT",
+      "price": 349,
+      "category": "GPU",
+      "incompatibleWith": [
+        "psu-corsair-cv550"
+      ],
+      "image": "/images/gpu-rx-9060xt.jpg",
+      "description": "16GB GDDR6, RDNA 4, competitive 1440p."
+    },
+    {
+      "id": "ssd-samsung-980pro",
+      "name": "Samsung 980 Pro 1TB NVMe",
+      "price": 89,
+      "category": "Storage",
+      "incompatibleWith": [],
+      "image": "/images/ssd-samsung-980pro.jpg",
+      "description": "PCIe 4.0 NVMe M.2, up to 7000MB/s read."
+    },
+    {
+      "id": "ssd-wd-sn580",
+      "name": "WD Blue SN580 1TB NVMe",
+      "price": 69,
+      "category": "Storage",
+      "incompatibleWith": [],
+      "image": "/images/ssd-wd-sn580.jpg",
+      "description": "PCIe 4.0 NVMe M.2, budget-friendly performance."
+    },
+    {
+      "id": "ssd-patriot-vp4300",
+      "name": "Patriot Viper VP4300 Lite 2TB",
+      "price": 119,
+      "category": "Storage",
+      "incompatibleWith": [],
+      "image": "/images/ssd-patriot-vp4300.jpg",
+      "description": "PCIe 4.0 NVMe M.2, 2TB high-capacity storage."
+    },
+    {
+      "id": "ssd-crucial-p3plus",
+      "name": "Crucial P3 Plus 2TB NVMe",
+      "price": 99,
+      "category": "Storage",
+      "incompatibleWith": [],
+      "image": "/images/ssd-crucial-p3plus.jpg",
+      "description": "PCIe 4.0 NVMe M.2, value 2TB option."
+    },
+    {
+      "id": "psu-corsair-cv550",
+      "name": "Corsair CV550 550W 80+ Bronze",
+      "price": 49,
+      "category": "PSU",
+      "wattage": 550,
+      "incompatibleWith": [
+        "gpu-rtx-5060ti",
+        "gpu-rx-9060xt"
+      ],
+      "image": "/images/psu-corsair-cv550.jpg",
+      "description": "550W, 80+ Bronze, non-modular. Good for budget builds."
+    },
+    {
+      "id": "psu-bequiet-750w",
+      "name": "be quiet! Pure Power 12 M 750W",
+      "price": 89,
+      "category": "PSU",
+      "wattage": 750,
+      "incompatibleWith": [],
+      "image": "/images/psu-bequiet-750w.jpg",
+      "description": "750W, 80+ Gold, fully modular, ATX 3.0."
+    },
+    {
+      "id": "psu-msi-mag750gl",
+      "name": "MSI MAG A750GL PCIE5 750W",
+      "price": 99,
+      "category": "PSU",
+      "wattage": 750,
+      "incompatibleWith": [],
+      "image": "/images/psu-msi-mag750gl.jpg",
+      "description": "750W, 80+ Gold, native 12VHPWR, PCIe 5.0 ready."
+    },
+    {
+      "id": "psu-rosewill-vsb750",
+      "name": "Rosewill VSB 750W 80+ Bronze",
+      "price": 59,
+      "category": "PSU",
+      "wattage": 750,
+      "incompatibleWith": [],
+      "image": "/images/psu-rosewill-vsb750.jpg",
+      "description": "750W, 80+ Bronze, budget high-wattage option."
+    },
+    {
+      "id": "case-nzxt-h5flow",
+      "name": "NZXT H5 Flow",
+      "price": 94,
+      "category": "Case",
+      "formFactor": "Mid Tower",
+      "incompatibleWith": [],
+      "image": "/images/case-nzxt-h5flow.jpg",
+      "description": "Mid-tower ATX, excellent airflow, tempered glass."
+    },
+    {
+      "id": "case-lianli-v100",
+      "name": "Lian Li Vector V100",
+      "price": 65,
+      "category": "Case",
+      "formFactor": "Micro ATX",
+      "incompatibleWith": [
+        "mobo-amd-x670",
+        "mobo-intel-z790",
+        "cooler-msi-aio240"
+      ],
+      "image": "/images/case-lianli-v100.jpg",
+      "description": "Micro-ATX case with angled PSU shroud, 4x ARGB fans."
+    },
+    {
+      "id": "case-coolermaster-masterbox",
+      "name": "Cooler Master MasterBox NR400",
+      "price": 79,
+      "category": "Case",
+      "formFactor": "Micro ATX",
+      "incompatibleWith": [
+        "mobo-amd-x670",
+        "cooler-msi-aio240"
+      ],
+      "image": "/images/case-coolermaster-masterbox.jpg",
+      "description": "Micro-ATX, mesh front panel, compact design."
+    },
+    {
+      "id": "case-fractal-design-pop",
+      "name": "Fractal Design Pop Air",
+      "price": 89,
+      "category": "Case",
+      "formFactor": "Mid Tower",
+      "incompatibleWith": [],
+      "image": "/images/case-fractal-design-pop.jpg",
+      "description": "Mid-tower ATX, clean aesthetic, great airflow."
+    },
+    {
+      "id": "cooler-hyper212",
+      "name": "Cooler Master Hyper 212 Pro",
+      "price": 35,
+      "category": "CPU Cooler",
+      "type": "Air",
+      "incompatibleWith": [],
+      "image": "/images/cooler-hyper212.jpg",
+      "description": "Single-tower air cooler, RGB fan, universal socket."
+    },
+    {
+      "id": "cooler-msi-aio240",
+      "name": "MSI MAG CoreLiquid A13 240",
+      "price": 79,
+      "category": "CPU Cooler",
+      "type": "AIO Liquid",
+      "incompatibleWith": [
+        "case-lianli-v100",
+        "case-coolermaster-masterbox"
+      ],
+      "image": "/images/cooler-msi-aio240.jpg",
+      "description": "240mm AIO liquid cooler, ARGB, great for high-end CPUs."
+    },
+    {
+      "id": "cooler-idcooling-frozn",
+      "name": "ID-COOLING FROZN A410 TD",
+      "price": 45,
+      "category": "CPU Cooler",
+      "type": "Air",
+      "incompatibleWith": [],
+      "image": "/images/cooler-idcooling-frozn.jpg",
+      "description": "Single-tower air cooler with temp display, budget-friendly."
+    },
+    {
+      "id": "cooler-stock-intel",
+      "name": "Intel Stock Cooler",
+      "price": 10,
+      "category": "CPU Cooler",
+      "type": "Air",
+      "incompatibleWith": [
+        "cpu-amd-9600x",
+        "cpu-amd-7600x3d"
+      ],
+      "image": "/images/cooler-stock-intel.jpg",
+      "description": "Included with Intel CPUs. Basic cooling, sufficient for non-K models."
+    }
+  ],
+  "builds": [],
+  "drafts": []
+}
