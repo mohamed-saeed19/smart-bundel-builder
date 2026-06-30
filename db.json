@@ -398,6 +398,40 @@
       "description": "Included with Intel CPUs. Basic cooling, sufficient for non-K models."
     }
   ],
-  "builds": [],
-  "drafts": []
+  "builds": [
+    {
+      "name": "Smart Build - 6/30/2026",
+      "selections": {
+        "CPU": "cpu-intel-14400f",
+        "Motherboard": "mobo-intel-b760",
+        "RAM": "ram-ddr4-16gb",
+        "GPU": "gpu-rx-7600",
+        "Storage": "ssd-wd-sn580",
+        "PSU": "psu-corsair-cv550",
+        "Case": "case-lianli-v100",
+        "CPU Cooler": "cooler-stock-intel"
+      },
+      "totalCost": 881,
+      "createdAt": "2026-06-29T23:03:53.495Z",
+      "id": "cshuQ50ZRkQ"
+    }
+  ],
+  "drafts": [
+    {
+      "id": "TzDeHNkvGKw",
+      "selections": {
+        "CPU": "cpu-intel-14400f",
+        "Motherboard": "mobo-intel-b760",
+        "RAM": "ram-ddr4-16gb",
+        "GPU": "gpu-rx-7600",
+        "Storage": "ssd-wd-sn580",
+        "PSU": "psu-corsair-cv550",
+        "Case": "case-lianli-v100",
+        "CPU Cooler": "cooler-idcooling-frozn"
+      },
+      "totalCost": 916,
+      "updatedAt": "2026-06-29T23:16:19.020Z"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
 }

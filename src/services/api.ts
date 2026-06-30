@@ -66,11 +66,15 @@ export const deleteBuild = async (id: string): Promise<void> => {
 };
 
 export const saveDraft = async (draft: SaveDraftPayload): Promise<Draft> => {
-  const res = await fetch(`${API_BASE}/drafts/1`, {
-    method: 'PUT',
+  const existingDraft = await getDraft();
+  const url = existingDraft ? `${API_BASE}/drafts/${existingDraft.id}` : `${API_BASE}/drafts`;
+  const method = existingDraft ? 'PUT' : 'POST';
+
+  const res = await fetch(url, {
+    method,
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({
-      id: '1',
+      ...(existingDraft ? { id: existingDraft.id } : {}),
       ...draft,
       updatedAt: new Date().toISOString(),
     }),
@@ -80,14 +84,17 @@ export const saveDraft = async (draft: SaveDraftPayload): Promise<Draft> => {
 };
 
 export const getDraft = async (): Promise<Draft | null> => {
-  const res = await fetch(`${API_BASE}/drafts/1`);
-  if (res.status === 404) return null;
-  if (!res.ok) throw new Error('Failed to fetch draft');
-  return res.json();
+  const res = await fetch(`${API_BASE}/drafts`);
+  if (!res.ok) throw new Error('Failed to fetch drafts');
+  const drafts = (await res.json()) as Draft[];
+  return drafts[0] ?? null;
 };
 
 export const deleteDraft = async (): Promise<void> => {
-  const res = await fetch(`${API_BASE}/drafts/1`, {
+  const existingDraft = await getDraft();
+  if (!existingDraft) return;
+
+  const res = await fetch(`${API_BASE}/drafts/${existingDraft.id}`, {
     method: 'DELETE',
   });
   if (!res.ok) throw new Error('Failed to delete draft');
